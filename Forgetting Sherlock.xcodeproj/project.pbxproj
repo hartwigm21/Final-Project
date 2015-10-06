@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5E103D21BC43BDE00507795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103D11BC43BDE00507795 /* AppDelegate.swift */; };
+		E5E103D41BC43BDE00507795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103D31BC43BDE00507795 /* ViewController.swift */; };
+		E5E103D71BC43BDE00507795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E103D51BC43BDE00507795 /* Main.storyboard */; };
+		E5E103DA1BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5E103D81BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld */; };
+		E5E103DC1BC43BDE00507795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E103DB1BC43BDE00507795 /* Assets.xcassets */; };
+		E5E103DF1BC43BDE00507795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E103DD1BC43BDE00507795 /* LaunchScreen.storyboard */; };
+		E5E103EA1BC43BDF00507795 /* Forgetting_SherlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103E91BC43BDF00507795 /* Forgetting_SherlockTests.swift */; };
+		E5E103F51BC43BDF00507795 /* Forgetting_SherlockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103F41BC43BDF00507795 /* Forgetting_SherlockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5E103E61BC43BDF00507795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5E103C61BC43BDE00507795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5E103CD1BC43BDE00507795;
+			remoteInfo = "Forgetting Sherlock";
+		};
+		E5E103F11BC43BDF00507795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5E103C61BC43BDE00507795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5E103CD1BC43BDE00507795;
+			remoteInfo = "Forgetting Sherlock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5E103CE1BC43BDE00507795 /* Forgetting Sherlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forgetting Sherlock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E103D11BC43BDE00507795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5E103D31BC43BDE00507795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5E103D61BC43BDE00507795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5E103D91BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Forgetting_Sherlock.xcdatamodel; sourceTree = "<group>"; };
+		E5E103DB1BC43BDE00507795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5E103DE1BC43BDE00507795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5E103E01BC43BDE00507795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E103E51BC43BDF00507795 /* Forgetting SherlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forgetting SherlockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E103E91BC43BDF00507795 /* Forgetting_SherlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forgetting_SherlockTests.swift; sourceTree = "<group>"; };
+		E5E103EB1BC43BDF00507795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E103F01BC43BDF00507795 /* Forgetting SherlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forgetting SherlockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E103F41BC43BDF00507795 /* Forgetting_SherlockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forgetting_SherlockUITests.swift; sourceTree = "<group>"; };
+		E5E103F61BC43BDF00507795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5E103CB1BC43BDE00507795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E103E21BC43BDF00507795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E103ED1BC43BDF00507795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5E103C51BC43BDE00507795 = {
+			isa = PBXGroup;
+			children = (
+				E5E103D01BC43BDE00507795 /* Forgetting Sherlock */,
+				E5E103E81BC43BDF00507795 /* Forgetting SherlockTests */,
+				E5E103F31BC43BDF00507795 /* Forgetting SherlockUITests */,
+				E5E103CF1BC43BDE00507795 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5E103CF1BC43BDE00507795 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5E103CE1BC43BDE00507795 /* Forgetting Sherlock.app */,
+				E5E103E51BC43BDF00507795 /* Forgetting SherlockTests.xctest */,
+				E5E103F01BC43BDF00507795 /* Forgetting SherlockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5E103D01BC43BDE00507795 /* Forgetting Sherlock */ = {
+			isa = PBXGroup;
+			children = (
+				E5E103D11BC43BDE00507795 /* AppDelegate.swift */,
+				E5E103D31BC43BDE00507795 /* ViewController.swift */,
+				E5E103D51BC43BDE00507795 /* Main.storyboard */,
+				E5E103DB1BC43BDE00507795 /* Assets.xcassets */,
+				E5E103DD1BC43BDE00507795 /* LaunchScreen.storyboard */,
+				E5E103E01BC43BDE00507795 /* Info.plist */,
+				E5E103D81BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld */,
+			);
+			path = "Forgetting Sherlock";
+			sourceTree = "<group>";
+		};
+		E5E103E81BC43BDF00507795 /* Forgetting SherlockTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E103E91BC43BDF00507795 /* Forgetting_SherlockTests.swift */,
+				E5E103EB1BC43BDF00507795 /* Info.plist */,
+			);
+			path = "Forgetting SherlockTests";
+			sourceTree = "<group>";
+		};
+		E5E103F31BC43BDF00507795 /* Forgetting SherlockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E103F41BC43BDF00507795 /* Forgetting_SherlockUITests.swift */,
+				E5E103F61BC43BDF00507795 /* Info.plist */,
+			);
+			path = "Forgetting SherlockUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5E103CD1BC43BDE00507795 /* Forgetting Sherlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E103F91BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting Sherlock" */;
+			buildPhases = (
+				E5E103CA1BC43BDE00507795 /* Sources */,
+				E5E103CB1BC43BDE00507795 /* Frameworks */,
+				E5E103CC1BC43BDE00507795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Forgetting Sherlock";
+			productName = "Forgetting Sherlock";
+			productReference = E5E103CE1BC43BDE00507795 /* Forgetting Sherlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5E103E41BC43BDF00507795 /* Forgetting SherlockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E103FC1BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting SherlockTests" */;
+			buildPhases = (
+				E5E103E11BC43BDF00507795 /* Sources */,
+				E5E103E21BC43BDF00507795 /* Frameworks */,
+				E5E103E31BC43BDF00507795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E103E71BC43BDF00507795 /* PBXTargetDependency */,
+			);
+			name = "Forgetting SherlockTests";
+			productName = "Forgetting SherlockTests";
+			productReference = E5E103E51BC43BDF00507795 /* Forgetting SherlockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5E103EF1BC43BDF00507795 /* Forgetting SherlockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E103FF1BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting SherlockUITests" */;
+			buildPhases = (
+				E5E103EC1BC43BDF00507795 /* Sources */,
+				E5E103ED1BC43BDF00507795 /* Frameworks */,
+				E5E103EE1BC43BDF00507795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E103F21BC43BDF00507795 /* PBXTargetDependency */,
+			);
+			name = "Forgetting SherlockUITests";
+			productName = "Forgetting SherlockUITests";
+			productReference = E5E103F01BC43BDF00507795 /* Forgetting SherlockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5E103C61BC43BDE00507795 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Matthew Hartwig";
+				TargetAttributes = {
+					E5E103CD1BC43BDE00507795 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E5E103E41BC43BDF00507795 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E5E103CD1BC43BDE00507795;
+					};
+					E5E103EF1BC43BDF00507795 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E5E103CD1BC43BDE00507795;
+					};
+				};
+			};
+			buildConfigurationList = E5E103C91BC43BDE00507795 /* Build configuration list for PBXProject "Forgetting Sherlock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5E103C51BC43BDE00507795;
+			productRefGroup = E5E103CF1BC43BDE00507795 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5E103CD1BC43BDE00507795 /* Forgetting Sherlock */,
+				E5E103E41BC43BDF00507795 /* Forgetting SherlockTests */,
+				E5E103EF1BC43BDF00507795 /* Forgetting SherlockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5E103CC1BC43BDE00507795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E103DF1BC43BDE00507795 /* LaunchScreen.storyboard in Resources */,
+				E5E103DC1BC43BDE00507795 /* Assets.xcassets in Resources */,
+				E5E103D71BC43BDE00507795 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E103E31BC43BDF00507795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E103EE1BC43BDF00507795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5E103CA1BC43BDE00507795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E103D41BC43BDE00507795 /* ViewController.swift in Sources */,
+				E5E103DA1BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld in Sources */,
+				E5E103D21BC43BDE00507795 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E103E11BC43BDF00507795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E103EA1BC43BDF00507795 /* Forgetting_SherlockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E103EC1BC43BDF00507795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E103F51BC43BDF00507795 /* Forgetting_SherlockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5E103E71BC43BDF00507795 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5E103CD1BC43BDE00507795 /* Forgetting Sherlock */;
+			targetProxy = E5E103E61BC43BDF00507795 /* PBXContainerItemProxy */;
+		};
+		E5E103F21BC43BDF00507795 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5E103CD1BC43BDE00507795 /* Forgetting Sherlock */;
+			targetProxy = E5E103F11BC43BDF00507795 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5E103D51BC43BDE00507795 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E103D61BC43BDE00507795 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5E103DD1BC43BDE00507795 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E103DE1BC43BDE00507795 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5E103F71BC43BDF00507795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5E103F81BC43BDF00507795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5E103FA1BC43BDF00507795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Forgetting Sherlock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-Sherlock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5E103FB1BC43BDF00507795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Forgetting Sherlock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-Sherlock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E5E103FD1BC43BDF00507795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Forgetting SherlockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-SherlockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forgetting Sherlock.app/Forgetting Sherlock";
+			};
+			name = Debug;
+		};
+		E5E103FE1BC43BDF00507795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Forgetting SherlockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-SherlockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forgetting Sherlock.app/Forgetting Sherlock";
+			};
+			name = Release;
+		};
+		E5E104001BC43BDF00507795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Forgetting SherlockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-SherlockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Forgetting Sherlock";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E5E104011BC43BDF00507795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Forgetting SherlockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-SherlockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Forgetting Sherlock";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5E103C91BC43BDE00507795 /* Build configuration list for PBXProject "Forgetting Sherlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E103F71BC43BDF00507795 /* Debug */,
+				E5E103F81BC43BDF00507795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E103F91BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting Sherlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E103FA1BC43BDF00507795 /* Debug */,
+				E5E103FB1BC43BDF00507795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E5E103FC1BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting SherlockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E103FD1BC43BDF00507795 /* Debug */,
+				E5E103FE1BC43BDF00507795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E5E103FF1BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting SherlockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E104001BC43BDF00507795 /* Debug */,
+				E5E104011BC43BDF00507795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5E103D81BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5E103D91BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodel */,
+			);
+			currentVersion = E5E103D91BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodel */;
+			path = Forgetting_Sherlock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E5E103C61BC43BDE00507795 /* Project object */;
+}
