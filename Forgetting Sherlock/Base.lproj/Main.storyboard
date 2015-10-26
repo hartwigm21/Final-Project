@@ -1,25 +1,249 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W2h-L1-d4x">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Story View Controller-->
+        <scene sceneID="GYb-6J-aV1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="Ipd-aH-S4D" customClass="StoryViewController" customModule="Forgetting_Sherlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ot3-Ca-QFR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="textCell" id="8U8-Z2-8uN" customClass="TextCell" customModule="Forgetting_Sherlock" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8U8-Z2-8uN" id="5hw-oI-cgA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And so the story begins..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqn-2k-Xqg">
+                                            <rect key="frame" x="18" y="0.0" width="574" height="35"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="Iqn-2k-Xqg" firstAttribute="trailing" secondItem="5hw-oI-cgA" secondAttribute="trailingMargin" id="8hL-WI-0Nc"/>
+                                        <constraint firstItem="Iqn-2k-Xqg" firstAttribute="leading" secondItem="5hw-oI-cgA" secondAttribute="leadingMargin" constant="10" id="BI0-y1-JFL"/>
+                                        <constraint firstItem="Iqn-2k-Xqg" firstAttribute="bottom" secondItem="5hw-oI-cgA" secondAttribute="bottomMargin" id="J58-zU-QvE"/>
+                                        <constraint firstItem="Iqn-2k-Xqg" firstAttribute="top" secondItem="5hw-oI-cgA" secondAttribute="top" id="TQt-ag-50p"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="storyText" destination="Iqn-2k-Xqg" id="Ubx-et-bc3"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="choiceCell" rowHeight="75" id="zB2-at-hgy" customClass="ChoiceCell" customModule="Forgetting_Sherlock" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="158" width="600" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="zB2-at-hgy" id="GdF-Cm-tZl">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sm-9a-LX7">
+                                            <rect key="frame" x="322" y="15" width="152" height="44"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.88792222740000004" green="0.82910472150000003" blue="0.68314677479999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Let's Wait">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" red="0.88792222738265991" green="0.8291047215461731" blue="0.68314677476882935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didSelectSecondChoice:" destination="zB2-at-hgy" eventType="touchUpInside" id="fO2-vD-MhI"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbs-1M-ynH">
+                                            <rect key="frame" x="150" y="15" width="150" height="44"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.88792222740000004" green="0.82910472150000003" blue="0.68314677479999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Go for It!">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" red="0.88792222738265991" green="0.8291047215461731" blue="0.68314677476882935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didSelectFirstChoice:" destination="zB2-at-hgy" eventType="touchUpInside" id="AXg-Qg-Yhd"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="3sm-9a-LX7" firstAttribute="firstBaseline" secondItem="Tbs-1M-ynH" secondAttribute="baseline" id="1Tl-YQ-NgZ"/>
+                                        <constraint firstItem="3sm-9a-LX7" firstAttribute="top" secondItem="GdF-Cm-tZl" secondAttribute="topMargin" constant="7" id="OPz-UQ-2rd"/>
+                                        <constraint firstItem="Tbs-1M-ynH" firstAttribute="centerY" secondItem="GdF-Cm-tZl" secondAttribute="centerY" id="Xvp-kx-8IY"/>
+                                        <constraint firstItem="3sm-9a-LX7" firstAttribute="baseline" secondItem="Tbs-1M-ynH" secondAttribute="firstBaseline" id="fGT-fm-Nj9"/>
+                                        <constraint firstItem="3sm-9a-LX7" firstAttribute="leading" secondItem="Tbs-1M-ynH" secondAttribute="trailing" constant="22" id="hDh-Vd-Q0D"/>
+                                        <constraint firstItem="3sm-9a-LX7" firstAttribute="top" secondItem="Tbs-1M-ynH" secondAttribute="top" id="mTh-XL-gL9"/>
+                                        <constraint firstItem="Tbs-1M-ynH" firstAttribute="trailing" secondItem="GdF-Cm-tZl" secondAttribute="centerX" id="v70-UF-3bg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="choiceOne" destination="Tbs-1M-ynH" id="uHd-ov-nxV"/>
+                                    <outlet property="choiceTwo" destination="3sm-9a-LX7" id="qGW-l1-kvo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Ipd-aH-S4D" id="f47-Yz-FQg"/>
+                            <outlet property="delegate" destination="Ipd-aH-S4D" id="p9f-Jf-WC1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="W8L-px-4vP"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="adh-6E-8pn" kind="presentation" identifier="mySegue" id="MIn-Xx-6QK"/>
+                        <segue destination="R3N-mi-2aC" kind="presentation" identifier="newsSegue" id="7Xt-lL-fuh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaS-A6-wCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1303" y="293"/>
+        </scene>
+        <!--Map of London-->
+        <scene sceneID="28A-Rk-8GI">
+            <objects>
+                <viewController id="Kas-el-EyF" customClass="MapController" customModule="Forgetting_Sherlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cgG-av-ydc"/>
+                        <viewControllerLayoutGuide type="bottom" id="BiF-BF-mI7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sUc-EG-jVj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapofLondon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m4f-n0-lfF">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m4f-n0-lfF" secondAttribute="trailing" id="Ef5-4g-3gb"/>
+                            <constraint firstItem="m4f-n0-lfF" firstAttribute="top" secondItem="cgG-av-ydc" secondAttribute="bottom" id="Y90-jg-yz1"/>
+                            <constraint firstItem="m4f-n0-lfF" firstAttribute="bottom" secondItem="BiF-BF-mI7" secondAttribute="top" id="f2M-UA-Nc0"/>
+                            <constraint firstItem="m4f-n0-lfF" firstAttribute="leading" secondItem="sUc-EG-jVj" secondAttribute="leading" id="xT0-GJ-r79"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map of London" id="m69-7D-QgS">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="afd-g7-iWv">
+                            <connections>
+                                <action selector="backButton:" destination="Kas-el-EyF" id="HHM-i0-f22"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Newspaper" id="kjh-Ov-nFN"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="MapImage" destination="m4f-n0-lfF" id="9be-2K-mKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZmR-wy-DZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753" y="949"/>
+        </scene>
+        <!--Forgetting Sherlock-->
+        <scene sceneID="iay-j8-gZv">
+            <objects>
+                <viewController id="Bhw-N6-foi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rcG-Xg-Pdl"/>
+                        <viewControllerLayoutGuide type="bottom" id="cyj-2S-vtA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ut7-zv-a9i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Forgetting Sherlock" id="cJI-Zg-4gy">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="vhQ-Ok-whM"/>
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="PCu-1A-5Is"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7O-rN-gM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="1646"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K3C-YU-mpC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W2h-L1-d4x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vzs-ai-8GS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ipd-aH-S4D" kind="relationship" relationship="rootViewController" id="a4d-O8-Jrt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jap-vu-WJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="293"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cCV-Pe-Ivt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="adh-6E-8pn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="njb-X5-Twf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kas-el-EyF" kind="relationship" relationship="rootViewController" id="3Qk-Qq-Tih"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRN-J1-CG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485" y="985"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iJq-AT-fi8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R3N-mi-2aC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VCG-VL-tWo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bhw-N6-foi" kind="relationship" relationship="rootViewController" id="UWX-fe-Jr8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3E9-xd-qJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="1628"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mapofLondon.jpg" width="800" height="600"/>
+    </resources>
 </document>

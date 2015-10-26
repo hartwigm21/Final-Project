@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		E5E103D21BC43BDE00507795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103D11BC43BDE00507795 /* AppDelegate.swift */; };
-		E5E103D41BC43BDE00507795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103D31BC43BDE00507795 /* ViewController.swift */; };
 		E5E103D71BC43BDE00507795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E103D51BC43BDE00507795 /* Main.storyboard */; };
 		E5E103DA1BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5E103D81BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld */; };
 		E5E103DC1BC43BDE00507795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E103DB1BC43BDE00507795 /* Assets.xcassets */; };
 		E5E103DF1BC43BDE00507795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E103DD1BC43BDE00507795 /* LaunchScreen.storyboard */; };
 		E5E103EA1BC43BDF00507795 /* Forgetting_SherlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103E91BC43BDF00507795 /* Forgetting_SherlockTests.swift */; };
 		E5E103F51BC43BDF00507795 /* Forgetting_SherlockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E103F41BC43BDF00507795 /* Forgetting_SherlockUITests.swift */; };
+		E5ED81751BC5F7B2006E630F /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED81741BC5F7B2006E630F /* StoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E5ED81771BC957B9006E630F /* ChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED81761BC957B9006E630F /* ChoiceCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E5ED81791BC957C9006E630F /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED81781BC957C9006E630F /* TextCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E5ED817C1BC964ED006E630F /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED817B1BC964ED006E630F /* MapController.swift */; settings = {ASSET_TAGS = (); }; };
+		E5ED817E1BC9663C006E630F /* mapofLondon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5ED817D1BC9663C006E630F /* mapofLondon.jpg */; settings = {ASSET_TAGS = (); }; };
+		E5ED81801BC9875E006E630F /* backgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5ED817F1BC9875E006E630F /* backgroundimage.jpg */; settings = {ASSET_TAGS = (); }; };
+		E5ED81821BCC65D0006E630F /* StoryTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED81811BCC65D0006E630F /* StoryTracker.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,6 @@
 /* Begin PBXFileReference section */
 		E5E103CE1BC43BDE00507795 /* Forgetting Sherlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forgetting Sherlock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E103D11BC43BDE00507795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5E103D31BC43BDE00507795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5E103D61BC43BDE00507795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5E103D91BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Forgetting_Sherlock.xcdatamodel; sourceTree = "<group>"; };
 		E5E103DB1BC43BDE00507795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		E5E103F01BC43BDF00507795 /* Forgetting SherlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forgetting SherlockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E103F41BC43BDF00507795 /* Forgetting_SherlockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forgetting_SherlockUITests.swift; sourceTree = "<group>"; };
 		E5E103F61BC43BDF00507795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5ED81741BC5F7B2006E630F /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		E5ED81761BC957B9006E630F /* ChoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceCell.swift; sourceTree = "<group>"; };
+		E5ED81781BC957C9006E630F /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		E5ED817B1BC964ED006E630F /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		E5ED817D1BC9663C006E630F /* mapofLondon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapofLondon.jpg; sourceTree = "<group>"; };
+		E5ED817F1BC9875E006E630F /* backgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundimage.jpg; sourceTree = "<group>"; };
+		E5ED81811BCC65D0006E630F /* StoryTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +112,16 @@
 			isa = PBXGroup;
 			children = (
 				E5E103D11BC43BDE00507795 /* AppDelegate.swift */,
-				E5E103D31BC43BDE00507795 /* ViewController.swift */,
+				E5ED81741BC5F7B2006E630F /* StoryViewController.swift */,
+				E5ED817F1BC9875E006E630F /* backgroundimage.jpg */,
 				E5E103D51BC43BDE00507795 /* Main.storyboard */,
+				E5ED817B1BC964ED006E630F /* MapController.swift */,
 				E5E103DB1BC43BDE00507795 /* Assets.xcassets */,
+				E5ED817D1BC9663C006E630F /* mapofLondon.jpg */,
 				E5E103DD1BC43BDE00507795 /* LaunchScreen.storyboard */,
 				E5E103E01BC43BDE00507795 /* Info.plist */,
 				E5E103D81BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld */,
+				E5ED817A1BC957CF006E630F /* Custom Cells */,
 			);
 			path = "Forgetting Sherlock";
 			sourceTree = "<group>";
@@ -126,6 +142,16 @@
 				E5E103F61BC43BDF00507795 /* Info.plist */,
 			);
 			path = "Forgetting SherlockUITests";
+			sourceTree = "<group>";
+		};
+		E5ED817A1BC957CF006E630F /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E5ED81761BC957B9006E630F /* ChoiceCell.swift */,
+				E5ED81781BC957C9006E630F /* TextCell.swift */,
+				E5ED81811BCC65D0006E630F /* StoryTracker.swift */,
+			);
+			name = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +260,8 @@
 				E5E103DF1BC43BDE00507795 /* LaunchScreen.storyboard in Resources */,
 				E5E103DC1BC43BDE00507795 /* Assets.xcassets in Resources */,
 				E5E103D71BC43BDE00507795 /* Main.storyboard in Resources */,
+				E5ED817E1BC9663C006E630F /* mapofLondon.jpg in Resources */,
+				E5ED81801BC9875E006E630F /* backgroundimage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E103D41BC43BDE00507795 /* ViewController.swift in Sources */,
+				E5ED81751BC5F7B2006E630F /* StoryViewController.swift in Sources */,
 				E5E103DA1BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld in Sources */,
 				E5E103D21BC43BDE00507795 /* AppDelegate.swift in Sources */,
+				E5ED81791BC957C9006E630F /* TextCell.swift in Sources */,
+				E5ED817C1BC964ED006E630F /* MapController.swift in Sources */,
+				E5ED81821BCC65D0006E630F /* StoryTracker.swift in Sources */,
+				E5ED81771BC957B9006E630F /* ChoiceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +517,7 @@
 				E5E103FB1BC43BDF00507795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5E103FC1BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting SherlockTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +526,7 @@
 				E5E103FE1BC43BDF00507795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5E103FF1BC43BDF00507795 /* Build configuration list for PBXNativeTarget "Forgetting SherlockUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +535,7 @@
 				E5E104011BC43BDF00507795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
