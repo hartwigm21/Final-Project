@@ -104,8 +104,10 @@ class StoryViewController: UITableViewController {
             (cell as! ChoiceCell).tracker = storyTracker
             
                             // choiceOne.setTitle(storyTracker.dict[count]!.title, forState: .Normal)
-            
-            print("the index path is \(count)")
+            count++
+
+            (cell as! ChoiceCell).choiceOne.setTitle(storyTracker.dict[count]!.title, forState: .Normal)
+            (cell as! ChoiceCell).choiceTwo.setTitle(storyTracker.dict[count]!.subtitle, forState: .Normal)
             count++
             return cell
         }

@@ -56,7 +56,7 @@ class ChoiceCell: UITableViewCell {
        tracker.firstChoiceUpdate()
         choiceOne.enabled = false
         choiceTwo.enabled = false
-        choiceOne.selected = true
+        choiceOne.highlighted = true
     }
     
    
