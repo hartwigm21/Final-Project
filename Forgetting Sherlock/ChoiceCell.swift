@@ -13,12 +13,25 @@ import UIKit
 class ChoiceCell: UITableViewCell {
 
     @IBOutlet weak var choiceOne: UIButton!
-    
     @IBOutlet weak var choiceTwo: UIButton!
     
-    var storyTracker = StoryTracker()
-    
-    
+    private var _storyTracker:StoryTracker!
+    var tracker:StoryTracker {
+        
+        get {
+            
+            return _storyTracker
+            
+        }
+        
+        set {
+            
+            _storyTracker = newValue
+            
+        }
+        
+    }
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.masksToBounds = true
@@ -29,8 +42,7 @@ class ChoiceCell: UITableViewCell {
         choiceOne.contentEdgeInsets.left = 10
         choiceTwo.contentEdgeInsets.right = 10
         choiceTwo.contentEdgeInsets.left = 10
-        storyTracker.updateChoices(choiceOne, choiceSecond: choiceTwo)
-            
+        
         // Initialization code
     }
 
@@ -41,12 +53,21 @@ class ChoiceCell: UITableViewCell {
     }
     
     @IBAction func didSelectFirstChoice(sender: AnyObject) {
-        NSNotificationCenter.defaultCenter().postNotificationName("0", object: nil, userInfo: nil)
+       tracker.firstChoiceUpdate()
+        choiceOne.enabled = false
+        choiceTwo.enabled = false
+        choiceOne.selected = true
     }
     
    
     @IBAction func didSelectSecondChoice(sender: AnyObject) {
-        NSNotificationCenter.defaultCenter().postNotificationName("1", object:nil, userInfo:nil)
+        tracker.secondChoiceUpdate()
+        choiceOne.enabled = false
+        choiceTwo.enabled = false
+
+
     }
+    
+
 
 }

@@ -8,49 +8,100 @@
 
 import UIKit
 
+struct Story {
+    
+    var title:String
+    var subtitle:String
+    var browsed:Bool = false
+    
+    init(title:String, subtitle:String = ""){
+        
+        self.title = title
+        self.subtitle = subtitle
+        
+    }
+    
+}
+
 
 class StoryTracker: NSObject {
         
-    var dict: [Int: Array] = [0: ["And so the story begins..."], 1: ["Watson what should I do?"], 2: ["Dammit Watson, that's no help!"]]
+    var dict: [Int: Story] =   [0: Story(title: "And so the story begins..."),
+                                1: Story(title: "Holmes what are you doing?",
+                                         subtitle: "Holmes, that makes no sense."),
+                                2: Story(title: "Dammit Watson, that's no help!"),
+                                3: Story(title: "Words",
+                                         subtitle: "word")]
+    
+    var rowTracker: Array = [2,1,1,1,1,1]
     
     var currentPlace: Int = 0
     
-    var choices: [Int: Array] = [0: ["Yes", "No"], 1: ["Hey", "Ho"]]
+    var numRowsAccessor:[Int] {
+        set {
+            
+        }
+        get {
+           return rowTracker
+        }
+  
+    }
+    
+    
+    var numSections: Int = 2
+    var numSectionsAccessor:Int {
+        set {
+
+        }
+        get {
+            return numSections
+        }
+    }
     
     
     override init() {
         super.init()
+        
+        
     }
-
+    //Replace these with notifications
     
     func updateChoices(choiceFirst: UIButton, choiceSecond: UIButton) {
-        let position = currentPlace
-        let displayChoices = choices
-        let choiceArray = displayChoices[position]
-        if let choiceArray = choiceArray {
-        choiceFirst.setTitle(choiceArray[0],forState: .Normal)
-        choiceSecond.setTitle(choiceArray[1],forState: .Normal)
-        }
+
+        let position = currentPlace + 1
+        let choice:Story = dict[position]!
+    
+        choiceFirst.setTitle(choice.title,forState: .Normal)
+        choiceSecond.setTitle(choice.subtitle,forState: .Normal)
+        
         //return choiceArray!
     }
     
-    func listenForCurrentPlace() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "firstChoiceUpdate", name: "0", object: nil)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "secondChoiceUpdate", name: "0", object: nil)
-        var numRows = currentPlace + 1
-        NSNotificationCenter.defaultCenter().postNotificationName(String(numRows), object: nil, userInfo: nil)
-        
-        NSNotificationCenter.defaultCenter().postNotificationName(<#T##aName: String##String#>, object: <#T##AnyObject?#>, userInfo: <#T##[NSObject : AnyObject]?#>)
+    func updateText(storyDisplayer: UILabel) {
+        let position = currentPlace
+        let story:Story = dict[position]!
+        storyDisplayer.text = story.title
     }
+    
+
     
     
     func firstChoiceUpdate() {
-        currentPlace + 1
+        
+        currentPlace += 1
+        numSections  += 2
+        print(numSections)
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("received", object: nil)
     }
     
     func secondChoiceUpdate() {
-        currentPlace + 2
+        
+        currentPlace += 2
+        numSections  += 2
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("received", object: nil)
+
     }
     
 }

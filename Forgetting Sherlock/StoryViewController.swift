@@ -1,4 +1,4 @@
-//
+    //
 //  StoryViewController.swift
 //  Forgetting Sherlock
 //
@@ -16,9 +16,9 @@ class StoryViewController: UITableViewController {
     
     
     var bgImage: UIImageView!
+    private var count:Int = 0
     
-    
-    
+    private var storyTracker = StoryTracker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +46,18 @@ class StoryViewController: UITableViewController {
         let barButtonNews = UIBarButtonItem(customView: buttonNews)
         buttonNews.addTarget(self, action: "newsButtonTouched", forControlEvents: UIControlEvents.TouchUpInside)
         self.navigationItem.rightBarButtonItem = barButtonNews
-
-
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "choiceRefresh", name: "received", object: nil)
+
 
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func choiceRefresh() {
+        print("heard")
+        count = 0
+        self.tableView.reloadData()
+        
     }
     
     func btnTouched() {
@@ -69,68 +76,48 @@ class StoryViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 2
+        
+        return storyTracker.numSectionsAccessor
+        
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        print("section is \(section)")
+        return storyTracker.numRowsAccessor[section]
+        
     }
 
     
+    //Use remainder to find if even or odd, then choose text or choice based on that
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
+        if indexPath.section % 2 == 0 {
         let cell = tableView.dequeueReusableCellWithIdentifier("textCell", forIndexPath: indexPath)
             //TextCell.displayText("Hello")
             cell.backgroundView?.alpha = 0.0
             cell.backgroundColor = UIColor.clearColor()
+            
+            (cell as! TextCell).storyText.text = storyTracker.dict[count]!.title
             return cell
         } else {
         let cell = tableView.dequeueReusableCellWithIdentifier("choiceCell", forIndexPath: indexPath)
             cell.backgroundColor = UIColor.clearColor()
+            (cell as! ChoiceCell).tracker = storyTracker
+            
+                            // choiceOne.setTitle(storyTracker.dict[count]!.title, forState: .Normal)
+            
+            print("the index path is \(count)")
+            count++
             return cell
         }
         // Configure the cell...
     }
     
+    
+    
+    
    
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation
