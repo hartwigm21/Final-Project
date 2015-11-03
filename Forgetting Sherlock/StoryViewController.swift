@@ -58,7 +58,10 @@ class StoryViewController: UITableViewController {
         count = 0
         self.tableView.reloadData()
         
-    }
+            let lastRowNumber = tableView.numberOfRowsInSection(0) - 1
+            let indexPath = NSIndexPath(forRow: lastRowNumber, inSection: tableView.numberOfSections - 1)
+            tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Bottom, animated: true)
+ }
     
     func btnTouched() {
         performSegueWithIdentifier("mySegue", sender: self)

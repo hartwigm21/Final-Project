@@ -31,9 +31,15 @@ class StoryTracker: NSObject {
                                          subtitle: "Holmes, that makes no sense."),
                                 2: Story(title: "Dammit Watson, that's no help!"),
                                 3: Story(title: "Words",
-                                         subtitle: "word")]
+                                         subtitle: "word"),
+                                4: Story(title: "We have no choice"),
+                                5: Story(title: "Holmes that makes no sense.",
+                                         subtitle: "Holmes you are a genius"),
+                                6: Story(title: "We have no choice"),
+                                7: Story(title: "Holmes that makes no sense.",
+                                         subtitle: "Holmes you are a genius")]
     
-    var rowTracker: Array = [2,1,1,1,1,1]
+    var rowTracker: Array = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     
     var currentPlace: Int = 0
     
@@ -84,8 +90,6 @@ class StoryTracker: NSObject {
     }
     
 
-    
-    
     func firstChoiceUpdate() {
         
         currentPlace += 1
