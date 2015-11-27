@@ -42,21 +42,20 @@ class ChoiceCell: UITableViewCell {
         choiceOne.contentEdgeInsets.left = 10
         choiceTwo.contentEdgeInsets.right = 10
         choiceTwo.contentEdgeInsets.left = 10
-        
         // Initialization code
+    
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     @IBAction func didSelectFirstChoice(sender: AnyObject) {
        tracker.firstChoiceUpdate()
         choiceOne.enabled = false
         choiceTwo.enabled = false
-        choiceOne.highlighted = true
+        choiceOne.setTitleShadowColor(UIColor.blueColor(), forState:
+            .Normal)
     }
     
    

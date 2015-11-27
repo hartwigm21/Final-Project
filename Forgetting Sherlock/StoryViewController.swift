@@ -24,7 +24,7 @@ class StoryViewController: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        self.tableView.rowHeight = 75.00
+        self.tableView.rowHeight = 95
         
         bgImage = UIImageView()
         bgImage.image = UIImage(named: "newBackgroundImage")

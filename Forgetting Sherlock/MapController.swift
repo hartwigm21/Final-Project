@@ -15,27 +15,19 @@ class MapController: UIViewController {
     @IBAction func backButton(sender: UIBarButtonItem) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let scene = MapScene(fileNamed: "MapScene")
+         let skView = self.view as! SKView
+         skView.presentScene(scene)
+        
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        /*let bgImage = UIImageView()
+        bgImage.image = UIImage(named: "Vintage")
+        self.view = bgImage*/
+        
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}

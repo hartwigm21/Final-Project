@@ -21,6 +21,14 @@
 		E5ED817E1BC9663C006E630F /* mapofLondon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5ED817D1BC9663C006E630F /* mapofLondon.jpg */; settings = {ASSET_TAGS = (); }; };
 		E5ED81801BC9875E006E630F /* backgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5ED817F1BC9875E006E630F /* backgroundimage.jpg */; settings = {ASSET_TAGS = (); }; };
 		E5ED81821BCC65D0006E630F /* StoryTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED81811BCC65D0006E630F /* StoryTracker.swift */; settings = {ASSET_TAGS = (); }; };
+		E5EF29001BEAF7E100A3DF7E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF28FF1BEAF7E100A3DF7E /* libz.tbd */; };
+		E5EF29021BEC061100A3DF7E /* JSTileMap.h in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF29011BEC061100A3DF7E /* JSTileMap.h */; };
+		E5EF29041BEC062100A3DF7E /* JSTileMap.m in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF29031BEC062100A3DF7E /* JSTileMap.m */; };
+		E5EF29071BEC065E00A3DF7E /* LFCGzipUtility.h in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF29051BEC065E00A3DF7E /* LFCGzipUtility.h */; };
+		E5EF29081BEC065E00A3DF7E /* LFCGzipUtility.m in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF29061BEC065E00A3DF7E /* LFCGzipUtility.m */; };
+		E5EF294D1BEC3DB900A3DF7E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF294C1BEC3DB900A3DF7E /* SpriteKit.framework */; };
+		E5EF29651BED5F5100A3DF7E /* NewsPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF29641BED5F5100A3DF7E /* NewsPaperViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E5EF29671BED7C1700A3DF7E /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EF29661BED7C1700A3DF7E /* MapScene.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,15 @@
 		E5ED817D1BC9663C006E630F /* mapofLondon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapofLondon.jpg; sourceTree = "<group>"; };
 		E5ED817F1BC9875E006E630F /* backgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundimage.jpg; sourceTree = "<group>"; };
 		E5ED81811BCC65D0006E630F /* StoryTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTracker.swift; sourceTree = "<group>"; };
+		E5EF28FF1BEAF7E100A3DF7E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E5EF29011BEC061100A3DF7E /* JSTileMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JSTileMap.h; path = "Forgetting Sherlock/JSTileMap.h"; sourceTree = "<group>"; };
+		E5EF29031BEC062100A3DF7E /* JSTileMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JSTileMap.m; path = "Forgetting Sherlock/JSTileMap.m"; sourceTree = "<group>"; };
+		E5EF29051BEC065E00A3DF7E /* LFCGzipUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LFCGzipUtility.h; path = "Forgetting Sherlock/LFCGzipUtility.h"; sourceTree = "<group>"; };
+		E5EF29061BEC065E00A3DF7E /* LFCGzipUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LFCGzipUtility.m; path = "Forgetting Sherlock/LFCGzipUtility.m"; sourceTree = "<group>"; };
+		E5EF290B1BEC09B700A3DF7E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		E5EF294C1BEC3DB900A3DF7E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		E5EF29641BED5F5100A3DF7E /* NewsPaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPaperViewController.swift; sourceTree = "<group>"; };
+		E5EF29661BED7C1700A3DF7E /* MapScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EF294D1BEC3DB900A3DF7E /* SpriteKit.framework in Frameworks */,
+				E5EF29071BEC065E00A3DF7E /* LFCGzipUtility.h in Frameworks */,
+				E5EF29081BEC065E00A3DF7E /* LFCGzipUtility.m in Frameworks */,
+				E5EF29041BEC062100A3DF7E /* JSTileMap.m in Frameworks */,
+				E5EF29021BEC061100A3DF7E /* JSTileMap.h in Frameworks */,
+				E5EF29001BEAF7E100A3DF7E /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +114,12 @@
 		E5E103C51BC43BDE00507795 = {
 			isa = PBXGroup;
 			children = (
+				E5EF294C1BEC3DB900A3DF7E /* SpriteKit.framework */,
+				E5EF29051BEC065E00A3DF7E /* LFCGzipUtility.h */,
+				E5EF29061BEC065E00A3DF7E /* LFCGzipUtility.m */,
+				E5EF29031BEC062100A3DF7E /* JSTileMap.m */,
+				E5EF29011BEC061100A3DF7E /* JSTileMap.h */,
+				E5EF28FF1BEAF7E100A3DF7E /* libz.tbd */,
 				E5E103D01BC43BDE00507795 /* Forgetting Sherlock */,
 				E5E103E81BC43BDF00507795 /* Forgetting SherlockTests */,
 				E5E103F31BC43BDF00507795 /* Forgetting SherlockUITests */,
@@ -114,8 +143,11 @@
 				E5E103D11BC43BDE00507795 /* AppDelegate.swift */,
 				E5ED81741BC5F7B2006E630F /* StoryViewController.swift */,
 				E5ED817F1BC9875E006E630F /* backgroundimage.jpg */,
+				E5EF290B1BEC09B700A3DF7E /* Header.h */,
+				E5EF29661BED7C1700A3DF7E /* MapScene.swift */,
 				E5E103D51BC43BDE00507795 /* Main.storyboard */,
 				E5ED817B1BC964ED006E630F /* MapController.swift */,
+				E5EF29641BED5F5100A3DF7E /* NewsPaperViewController.swift */,
 				E5E103DB1BC43BDE00507795 /* Assets.xcassets */,
 				E5ED817D1BC9663C006E630F /* mapofLondon.jpg */,
 				E5E103DD1BC43BDE00507795 /* LaunchScreen.storyboard */,
@@ -290,7 +322,9 @@
 				E5E103DA1BC43BDE00507795 /* Forgetting_Sherlock.xcdatamodeld in Sources */,
 				E5E103D21BC43BDE00507795 /* AppDelegate.swift in Sources */,
 				E5ED81791BC957C9006E630F /* TextCell.swift in Sources */,
+				E5EF29651BED5F5100A3DF7E /* NewsPaperViewController.swift in Sources */,
 				E5ED817C1BC964ED006E630F /* MapController.swift in Sources */,
+				E5EF29671BED7C1700A3DF7E /* MapScene.swift in Sources */,
 				E5ED81821BCC65D0006E630F /* StoryTracker.swift in Sources */,
 				E5ED81771BC957B9006E630F /* ChoiceCell.swift in Sources */,
 			);
@@ -436,6 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-Sherlock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/matthewhartwig/Desktop/Forgetting Sherlock/Forgetting Sherlock/Header.h";
 			};
 			name = Debug;
 		};
@@ -447,6 +482,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "T-M.Forgetting-Sherlock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/matthewhartwig/Desktop/Forgetting Sherlock/Forgetting Sherlock/Header.h";
 			};
 			name = Release;
 		};

@@ -55,29 +55,34 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sm-9a-LX7">
-                                            <rect key="frame" x="322" y="15" width="152" height="44"/>
-                                            <animations/>
-                                            <color key="backgroundColor" red="0.88792222740000004" green="0.82910472150000003" blue="0.68314677479999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <state key="normal" title="Let's Wait">
-                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" red="0.88792222738265991" green="0.8291047215461731" blue="0.68314677476882935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="didSelectSecondChoice:" destination="zB2-at-hgy" eventType="touchUpInside" id="fO2-vD-MhI"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tbs-1M-ynH">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tbs-1M-ynH">
                                             <rect key="frame" x="150" y="15" width="150" height="44"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.88792222740000004" green="0.82910472150000003" blue="0.68314677479999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="fiV-r2-GGT"/>
+                                                <constraint firstAttribute="width" constant="150" id="qGF-N9-P2O"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <state key="normal" title="Go for It!">
                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" red="0.88792222738265991" green="0.8291047215461731" blue="0.68314677476882935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
                                                 <action selector="didSelectFirstChoice:" destination="zB2-at-hgy" eventType="touchUpInside" id="AXg-Qg-Yhd"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sm-9a-LX7">
+                                            <rect key="frame" x="322" y="15" width="152" height="44"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.88792222740000004" green="0.82910472150000003" blue="0.68314677479999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="Let's Wait">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" red="0.88792222738265991" green="0.8291047215461731" blue="0.68314677476882935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didSelectSecondChoice:" destination="zB2-at-hgy" eventType="touchUpInside" id="fO2-vD-MhI"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -112,12 +117,11 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="adh-6E-8pn" kind="presentation" identifier="mySegue" id="MIn-Xx-6QK"/>
-                        <segue destination="R3N-mi-2aC" kind="presentation" identifier="newsSegue" id="7Xt-lL-fuh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OaS-A6-wCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="293"/>
+            <point key="canvasLocation" x="1297" y="215"/>
         </scene>
         <!--Map of London-->
         <scene sceneID="28A-Rk-8GI">
@@ -131,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map of London" id="m69-7D-QgS">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="afd-g7-iWv">
@@ -169,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7O-rN-gM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1679" y="1646"/>
+            <point key="canvasLocation" x="2173" y="1687"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K3C-YU-mpC">
@@ -208,25 +212,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BRN-J1-CG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="485" y="985"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="iJq-AT-fi8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R3N-mi-2aC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VCG-VL-tWo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Bhw-N6-foi" kind="relationship" relationship="rootViewController" id="UWX-fe-Jr8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3E9-xd-qJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="497" y="1628"/>
         </scene>
     </scenes>
 </document>

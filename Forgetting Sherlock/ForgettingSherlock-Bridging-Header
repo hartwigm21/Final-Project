@@ -1,0 +1,15 @@
+//
+//  ForgettingSherlock-Briding-Header.H
+//  Forgetting Sherlock
+//
+//  Created by Matthew Hartwig on 11/5/15.
+//  Copyright © 2015 Matthew Hartwig. All rights reserved.
+//
+
+#ifndef ForgettingSherlock_Bridging_Header
+#define ForgettingSherlock_Bridging_Header
+
+#import "JSTileMap.h"
+#import "LFCGzipUtility.h"
+
+#endif /* ForgettingSherlock_Briding_Header_h */
