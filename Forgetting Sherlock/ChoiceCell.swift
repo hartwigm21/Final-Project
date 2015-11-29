@@ -12,6 +12,8 @@ import UIKit
 
 class ChoiceCell: UITableViewCell {
 
+    let myFirstLabel = UILabel()
+    
     @IBOutlet weak var choiceOne: UIButton!
     @IBOutlet weak var choiceTwo: UIButton!
     
@@ -38,11 +40,26 @@ class ChoiceCell: UITableViewCell {
         layer.cornerRadius = 8
         choiceOne.layer.cornerRadius = 10
         choiceTwo.layer.cornerRadius = 10
-        choiceOne.contentEdgeInsets.right = 10
-        choiceOne.contentEdgeInsets.left = 10
-        choiceTwo.contentEdgeInsets.right = 10
-        choiceTwo.contentEdgeInsets.left = 10
-        // Initialization code
+        choiceOne.contentEdgeInsets.right = 5
+        choiceOne.contentEdgeInsets.left = 5
+        choiceTwo.contentEdgeInsets.right = 5
+        choiceTwo.contentEdgeInsets.left = 5
+        choiceOne.contentEdgeInsets.top = 1
+        choiceTwo.contentEdgeInsets.top = 1
+        
+        choiceOne.titleEdgeInsets.left = 5; // this line of code add padding from left side of button.
+        choiceOne.titleEdgeInsets.right = 5; // this line of code add padding from right side of button.
+        choiceOne.titleEdgeInsets.top = 1; // this line of code add padding from top side of button.
+        choiceOne.titleEdgeInsets.bottom = 1; // this line of code add padding from bottom side of button.
+        
+        
+        choiceTwo.titleEdgeInsets.left = 10; // this line of code add padding from left side of button.
+        choiceTwo.titleEdgeInsets.right = 10; // this line of code add padding from right side of button.
+        choiceTwo.titleEdgeInsets.top = 1; // this line of code add padding from top side of button.
+        choiceTwo.titleEdgeInsets.bottom = 1; // this line of code add padding from bottom side of button.
+        
+        choiceOne.titleLabel?.numberOfLines = 0
+        choiceTwo.titleLabel?.numberOfLines = 0
     
     }
 

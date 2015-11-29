@@ -15,6 +15,7 @@ protocol StoryViewControllerDelegate {
 class StoryViewController: UITableViewController {
     
     
+    
     var bgImage: UIImageView!
     private var count:Int = 0
     
@@ -23,8 +24,11 @@ class StoryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.tableView.rowHeight = UITableViewAutomaticDimension
+        //self.tableView.estimatedRowHeight = 125.0
+        
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        self.tableView.rowHeight = 95
+        self.tableView.rowHeight = 125
         
         bgImage = UIImageView()
         bgImage.image = UIImage(named: "newBackgroundImage")
@@ -108,10 +112,11 @@ class StoryViewController: UITableViewController {
             
                             // choiceOne.setTitle(storyTracker.dict[count]!.title, forState: .Normal)
             count++
-
+            print(storyTracker.dict[count]!.title)
             (cell as! ChoiceCell).choiceOne.setTitle(storyTracker.dict[count]!.title, forState: .Normal)
             (cell as! ChoiceCell).choiceTwo.setTitle(storyTracker.dict[count]!.subtitle, forState: .Normal)
             count++
+            print(storyTracker.dict[count]!.subtitle)
             return cell
         }
         // Configure the cell...
